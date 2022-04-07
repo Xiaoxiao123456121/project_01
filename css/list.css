@@ -1,0 +1,56 @@
+/* nav的盒子高度为47像素，而有的盒子设置了49像素且浮动，故文字会围绕它环绕 */
+.nav{
+    overflow: hidden;
+}
+.sk{
+    position: absolute;
+    border-left:1px solid #c81523;
+    left:190px;
+    top:40px;
+    padding:3px 0 0 14px;
+}
+.sk_list{
+    float: left;
+}
+.sk_con{
+    float:left;
+}
+.sk_list ul li{
+    float:left;
+}
+.sk_list ul li a{
+    display: block;
+    line-height:47px;
+    font-size:16px;
+    font-weight:700;
+    padding:0 32px;
+    color:#000;
+}
+.sk_con ul li{
+    float:left;
+}
+.sk_con ul li a{
+    display: block;
+    line-height:49px;
+    font-size:14px;
+    padding:0 13px;
+}
+.sk_con ul{
+    margin-left:46px;
+}
+.sk_con ul li:last-child a::after{
+    content:'\ea50';
+    font-family:'icomoon';
+}
+.sk_bd ul li{
+    height:460px;
+    width: 270px;
+    background: url(../images/手机2.0_03.jpg);
+    border:1px solid transparent;
+    overflow: hidden;
+    float:left;
+    margin-left:29px;
+}
+.sk_bd ul li:hover{
+    border:solid 1px #c81523;
+}
